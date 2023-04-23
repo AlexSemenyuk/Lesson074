@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task02-Home</title>
+    <link rel='stylesheet' href="resources/css/pico.min.css">
+    <link rel='stylesheet' href="resources/css/style-home1.css">
+    <style>
+        h1.h1,
+        .button {
+            font-size:%spx;
+        }
+        .container {
+            background-color:%s;
+        }
+    </style>
+</head>
+<body>
+<article class="container" data-theme="%s">
+    <div></div>
+    <div class="menu">
+        <h1 class="h1">Hello, welcome you to our application</h1>
+
+        <form action="signup">
+            <button class="button" type="submit">Sign up</button>
+        </form>
+        <form action="registration">
+            <button class="button" type="submit">Registration</button>
+        </form>
+    </div>
+    <div></div>
+</article>
+<article class="con-settings" data-theme="%s">
+    <form method="post" class="settings">
+        <div>
+            <h2 class="h2">Theme</h2>
+            <div class="input-theme">
+                <label class="label-theme" for="theme-light">Light</label>
+                <input id="theme-light" type="radio" name="theme" value="light">
+                <label class="label-theme" for="theme-dark">Dark</label>
+                <input id="theme-dark"  type="radio" name="theme" value="dark">
+            </div>
+
+        </div>
+        <div>
+            <h2 class="h2">Background main</h2>
+            <input id="color" name="color" type="color">
+        </div>
+        <div>
+            <h2 class="h2">Font size</h2>
+            <input id="font-size" name="font" type="number" step="1" min="8" max="40" placeholder="Input number from 8 to 40">
+        </div>
+        <input id="but-theme" class="but-theme" type="submit" value="Submit">
+    </form>
+</article>
+<body>
+</html>
+
